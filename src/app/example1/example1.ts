@@ -1,5 +1,5 @@
 import {Component, ViewChild, AfterViewInit} from 'angular2/core';
-import {KSSwiperContainer, KSSwiperSlide} from './../components/ks-swiper';
+import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
 
 @Component({
   selector: 'example1',
