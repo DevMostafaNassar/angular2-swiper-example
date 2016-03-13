@@ -33,6 +33,9 @@ export class KSSwiperContainer {
 
   @Input() options: any;
 
+  // the underlying swiper instance
+  // TODO: do not have typedefinitions yet
+  // so using any
   swiper: any;
 
   showPager: boolean;

@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, ViewChild, AfterViewInit} from 'angular2/core';
 import {KSSwiperContainer, KSSwiperSlide} from './components/ks-swiper';
 
 @Component({
@@ -34,10 +34,12 @@ import {KSSwiperContainer, KSSwiperSlide} from './components/ks-swiper';
   `],
   template: require('./app.html')
 })
-export class App {
+export class App implements AfterViewInit {
+
+  // this is how you get access to the child component
+  @ViewChild(KSSwiperContainer) swiperContainer: KSSwiperContainer;
 
   example1SwipeOptions: any;
-  swiper: any;
 
   constructor() {
     this.example1SwipeOptions = {
@@ -47,5 +49,17 @@ export class App {
     };
   }
 
+  moveNext() {
+    this.swiperContainer.swiper.slideNext();
+  }
+
+  movePrev() {
+    this.swiperContainer.swiper.slidePrev();
+  }
+
+  ngAfterViewInit() {
+    console.log('here');
+    console.log(this.swiperContainer);
+  }
 
 }
