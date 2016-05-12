@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="">
-
 <head>
 
-  <title>
-    <%= webpackConfig.metadata.title %>
-  </title>
-
+  <title><%= webpackConfig.metadata.title %></title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +12,6 @@
   <!-- use http://www.favicon-generator.org/ to replace files in public/icon-->
   <link rel="manifest" href="/assets/manifest.json">
   <meta name="msapplication-TileColor" content="#00bcd4">
-  <meta name="msapplication-TileImage" content="/assets/icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#00bcd4">
   <!-- end favicon -->
 
@@ -28,14 +23,13 @@
 <body>
 
   <app>
-    Loading...
+
   </app>
 
   <% if (webpackConfig.metadata.ENV === 'development') { %>
-    <!-- Webpack Dev Server reload -->
-    <script src="http://<%= webpackConfig.metadata.host %>:<%= webpackConfig.metadata.port %>/webpack-dev-server.js"></script>
-    <% } %>
+  <!-- Webpack Dev Server reload -->
+  <script src="http://<%= webpackConfig.metadata.host %>:<%= webpackConfig.metadata.port %>/webpack-dev-server.js"></script>
+  <% } %>
 
 </body>
-
 </html>

@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit} from 'angular2/core';
+import {Component, ViewChild, AfterViewInit} from '@angular/core';
 import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
 
 @Component({

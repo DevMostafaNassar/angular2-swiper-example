@@ -1,10 +1,9 @@
-declare var Error: any;
-declare var ENV: any;
+import 'core-js/es6';
+import 'core-js/es7/reflect';
+require('zone.js/dist/zone');
 
-import 'es6-shim';
-import 'es6-promise';
-import 'es7-reflect-metadata';
-import 'zone.js/dist/zone-microtask';
+// Typescript emit helpers polyfill
+import 'ts-helpers';
 
 if ('production' === ENV) {
   // Production
