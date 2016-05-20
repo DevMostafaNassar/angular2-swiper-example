@@ -18,7 +18,7 @@ Example:
 ```html
 <div class="myslides">
   <ks-swiper-container [options]="example1SwipeOptions">
-    <ks-swiper-slide *ngFor="#s of [1,2,3,4,5,6,7]">
+    <ks-swiper-slide *ngFor="let s of [1,2,3,4,5,6,7]">
       <img src="http://api.randomuser.me/portraits/thumb/men/{{s}}.jpg">
     </ks-swiper-slide>
   </ks-swiper-container>
