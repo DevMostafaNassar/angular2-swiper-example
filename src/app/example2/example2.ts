@@ -6,7 +6,18 @@ import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
   pipes: [],
   providers: [],
   directives: [KSSwiperContainer, KSSwiperSlide],
-  template: require('./example2.html')
+  template: `
+  <div class="myslides">
+    <ks-swiper-container [options]="example2SwipeOptions">
+      <ks-swiper-slide *ngFor="let s of slides">
+        <img src="http://api.randomuser.me/portraits/thumb/women/{{s.number}}.jpg">
+      </ks-swiper-slide>
+    </ks-swiper-container>
+    <button (click)="movePrev()">Prev</button>
+    <button (click)="moveNext()">Next</button>
+    <button (click)="addSlide()">Add</button>
+  </div>
+  `
 })
 export class Example2 implements AfterViewInit {
 
@@ -37,7 +48,7 @@ export class Example2 implements AfterViewInit {
     this.swiperContainer.swiper.slidePrev();
   }
 
-  getRandom(min, max) {
+  getRandom(min: number, max: number) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 

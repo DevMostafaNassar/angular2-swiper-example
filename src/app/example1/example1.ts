@@ -6,7 +6,17 @@ import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
   pipes: [],
   providers: [],
   directives: [KSSwiperContainer, KSSwiperSlide],
-  template: require('./example1.html')
+  template: `
+  <div class="myslides">
+    <ks-swiper-container [options]="example1SwipeOptions">
+      <ks-swiper-slide *ngFor="let s of [1,2,3,4,5,6,7]">
+        <img src="http://api.randomuser.me/portraits/thumb/men/{{s}}.jpg">
+      </ks-swiper-slide>
+    </ks-swiper-container>
+    <button (click)="movePrev()">Prev</button>
+    <button (click)="moveNext()">Next</button>
+  </div>
+  `
 })
 export class Example1 implements AfterViewInit {
 
