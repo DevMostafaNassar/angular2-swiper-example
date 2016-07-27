@@ -26,36 +26,6 @@
       main: 'dist/js/swiper.js',
       defaultExtension: 'js'
     }
-    /*,
-
-        'hammerjs': {
-          main: 'hammer.js',
-          defaultExtension: 'js'
-        },
-        'sister': {
-          main: 'src/sister.js',
-          defaultExtension: 'js'
-        },
-        'raf': {
-          main: 'index.js',
-          defaultExtension: 'js'
-        },
-        'vendor-prefix': {
-          main: 'index.js',
-          defaultExtension: 'js'
-        },
-        'lodash': {
-          main: 'index.js',
-          defaultExtension: 'js'
-        },
-        'performance-now': {
-          main: 'lib/performance-now.js',
-          defaultExtension: 'js'
-        },
-        'rebound': {
-          main: 'rebound.js',
-          defaultExtension: 'js'
-        }*/
   };
 
   var ngPackageNames = [
