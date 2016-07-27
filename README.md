@@ -3,7 +3,6 @@ Example of how to use Swiper in angular 2 application
 
 # Install require global applications
 - npm install -g typings
-- npm install -g webpack
 - npm install -g typescript
 
 # Install local dependencies
