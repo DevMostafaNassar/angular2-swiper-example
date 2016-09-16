@@ -20,7 +20,7 @@
       defaultExtension: 'js'
     },
     'angular2-swiper': {
-      main: 'dist/ks-swiper.js',
+      main: 'dist/index.js',
       defaultExtension: 'js'
     },
     'swiper': {
