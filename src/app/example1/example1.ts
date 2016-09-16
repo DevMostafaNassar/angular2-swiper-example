@@ -3,9 +3,7 @@ import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
 
 @Component({
   selector: 'example1',
-  pipes: [],
   providers: [],
-  directives: [KSSwiperContainer, KSSwiperSlide],
   template: `
   <div class="myslides">
     <ks-swiper-container [options]="example1SwipeOptions">
@@ -18,7 +16,7 @@ import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
   </div>
   `
 })
-export class Example1 implements AfterViewInit {
+export class Example1Component implements AfterViewInit {
 
   // this is how you get access to the child component
   @ViewChild(KSSwiperContainer) swiperContainer: KSSwiperContainer;
