@@ -1,3 +1,9 @@
+# [Not Maintained and Deprecated]
+
+This project is not maintained any more and is deprecated.
+
+Please check out https://github.com/zefoy/ngx-swiper-wrapper if you are looking for the wrapper component for swiper.
+
 # angular2-swiper-example
 Example of how to use Swiper in angular 2 application
 
